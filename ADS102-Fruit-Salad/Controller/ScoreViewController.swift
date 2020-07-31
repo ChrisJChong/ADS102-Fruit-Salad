@@ -10,6 +10,8 @@ import UIKit
 
 class ScoreViewController: UIViewController {
 
+    @IBOutlet weak var scoreLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,6 +19,13 @@ class ScoreViewController: UIViewController {
     }
     
 
+    @IBAction func playAgainButtonPressed(_ sender: UIButton) {
+        
+        if let action = sender.titleLabel {
+            print(action)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
