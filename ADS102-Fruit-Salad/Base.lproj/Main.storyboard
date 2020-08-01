@@ -133,14 +133,14 @@
                                                     <action selector="fruitButtonTapped:" destination="Oob-nk-pD6" eventType="touchUpInside" id="sNT-vU-jsU"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxF-gH-W9y">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxF-gH-W9y">
                                                 <rect key="frame" x="0.0" y="198" width="172" height="168.5"/>
                                                 <state key="normal" title="Button" image="Lemonade"/>
                                                 <connections>
                                                     <action selector="fruitButtonTapped:" destination="Oob-nk-pD6" eventType="touchUpInside" id="UxT-84-5Gc"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C1-Ks-iVB">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C1-Ks-iVB">
                                                 <rect key="frame" x="0.0" y="396.5" width="172" height="168"/>
                                                 <state key="normal" title="Button" image="Watermelon"/>
                                                 <connections>
@@ -152,21 +152,21 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5Oa-x5-aox">
                                         <rect key="frame" x="202" y="0.0" width="172" height="564.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdc-94-zlP">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdc-94-zlP">
                                                 <rect key="frame" x="0.0" y="0.0" width="172" height="168"/>
                                                 <state key="normal" title="Button" image="Grape"/>
                                                 <connections>
                                                     <action selector="fruitButtonTapped:" destination="Oob-nk-pD6" eventType="touchUpInside" id="QCb-eY-k9f"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmQ-cr-4yO">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmQ-cr-4yO">
                                                 <rect key="frame" x="0.0" y="198" width="172" height="168.5"/>
                                                 <state key="normal" title="Button" image="Pineapple"/>
                                                 <connections>
                                                     <action selector="fruitButtonTapped:" destination="Oob-nk-pD6" eventType="touchUpInside" id="bgp-0d-E56"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PD-CC-VEc">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PD-CC-VEc">
                                                 <rect key="frame" x="0.0" y="396.5" width="172" height="168"/>
                                                 <state key="normal" title="Button" image="Strawberry"/>
                                                 <connections>
