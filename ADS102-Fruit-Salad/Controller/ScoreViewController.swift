@@ -21,8 +21,17 @@ class ScoreViewController: UIViewController {
 
     @IBAction func playAgainButtonPressed(_ sender: UIButton) {
         
-        if let action = sender.titleLabel {
+        if let action = sender.titleLabel?.text {
             print(action)
+            if action == "YES" {
+                //Dismiss the current view and load the previous view
+                navigationController?.popViewController(animated: true)
+            } else {
+                self.navigationController?.popToRootViewController(animated: true)
+            }
+            
+            
+            
         }
     }
     

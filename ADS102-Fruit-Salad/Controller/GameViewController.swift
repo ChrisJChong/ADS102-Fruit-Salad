@@ -32,9 +32,13 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        //Clear the collection to be used for later
+        fruitSaladNames.removeAll()
+        
         //Shuffle the fruit collection
         fruitCollection.shuffle()
         
+        //Adds up to 6 different types of fruit into a new collection
         for index in 0...5 {
             fruitSaladNames.append(fruitCollection[index])
         }
@@ -49,10 +53,10 @@ class GameViewController: UIViewController {
         }
         
         //Shuffle the fruit salad names
-        fruitSaladImages.shuffle()
+        fruitSaladNames.shuffle()
         
         
-        fruitName.text = fruitSaladImages.removeLast()
+        fruitName.text = fruitSaladNames.removeLast()
         /*for fruit in fruitSaladNames {
             fruitName.text = fruit
         }*/
@@ -60,17 +64,52 @@ class GameViewController: UIViewController {
     }
 
     @IBAction func fruitButtonTapped(_ sender: UIButton) {
-        print("Fruit button tag: \(sender.tag) Selected fruit name:\(fruitSaladNames[sender.tag])")
+        print("Fruit button tag: \(sender.tag) Selected fruit name:\(fruitSaladImages[sender.tag])")
         
-        if(fruitSaladNames[sender.tag] == fruitName.text) {
+        if(fruitSaladImages[sender.tag] == fruitName.text) {
+            
             print("Fruit Match")
+            //Award points
+            
+            //Disable the button that was just pressed
+            //sender.isEnabled = false
+            
+            //
+            
+            //Check if the frutiSaladImage collection is empty
+            if(fruitSaladNames.isEmpty) {
+                
+                //If empty trigger the segue into the ScoreViewController
+                self.performSegue(withIdentifier: "goToScore", sender: self)
+                
+            } else {
+               
+                fruitName.text = fruitSaladNames.removeLast()
+                print("Items remaining - \(fruitSaladNames.count)")
+            }
+            
+            
+            
+        } else {
+            
+            //Don't award any points
+            print("No match")
+            
         }
+        
+        
+        
+        
+        
         
         
     }
     
     //Creates a new game, every new round will contain a new shuffled collection
     func newGame() {
+        
+        //
+        
         
     }
     
