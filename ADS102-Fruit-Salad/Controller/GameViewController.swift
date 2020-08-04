@@ -15,10 +15,10 @@ class GameViewController: UIViewController {
     @IBOutlet var fruitButtonCollection: [UIButton]!
     
     var fruitCollection: [String] = ["Apple","Grape","Kiwi","Lemonade","Orange","Pineapple","Strawberry","Watermelon"]
-    
     var fruitSaladNames: [String] = []
-    
     var fruitSaladImages: [String] = []
+    
+    var newGameFlag = false
     
     //Words are shuffled
     //User is presented with all of the words and none of them are repeated
@@ -31,37 +31,24 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print("viewDidLoad")
         
-        //Clear the collection to be used for later
-        fruitSaladNames.removeAll()
-        
-        //Shuffle the fruit collection
-        fruitCollection.shuffle()
-        
-        //Adds up to 6 different types of fruit into a new collection
-        for index in 0...5 {
-            fruitSaladNames.append(fruitCollection[index])
-        }
-        print(fruitSaladNames)
-        
-        //Assign the stored fruit salad names into the fruit salad image collections
-        fruitSaladImages = fruitSaladNames
-        
-        for fruitImage in fruitButtonCollection {
-            fruitImage.setImage(UIImage(named: fruitSaladImages[fruitImage.tag]), for: .normal)
-            print("fruitImage number: \(fruitImage.tag) fruitImage name: \(fruitSaladImages[fruitImage.tag])")
-        }
-        
-        //Shuffle the fruit salad names
-        fruitSaladNames.shuffle()
-        
-        
-        fruitName.text = fruitSaladNames.removeLast()
-        /*for fruit in fruitSaladNames {
-            fruitName.text = fruit
-        }*/
-        
+        //Start a new game
+        //newGame()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("viewDidAppear - start new round")
+        
+        //Check whether the user wants to play again, reset the round
+        //if newGameFlag {
+            newGame()
+        //    print("new game")
+        //    newGameFlag = false
+        //}
+    }
+
 
     @IBAction func fruitButtonTapped(_ sender: UIButton) {
         print("Fruit button tag: \(sender.tag) Selected fruit name:\(fruitSaladImages[sender.tag])")
@@ -96,21 +83,39 @@ class GameViewController: UIViewController {
             print("No match")
             
         }
-        
-        
-        
-        
-        
-        
-        
+         
     }
     
     //Creates a new game, every new round will contain a new shuffled collection
     func newGame() {
         
+        //Make sure there are no previous items in the collections
+        fruitSaladNames.removeAll()
+        fruitSaladImages.removeAll()
+        
+        //Shuffle the fruit collection
+        fruitCollection.shuffle()
+        
+        //Adds up to 6 different types of fruit into a new collection
+        for index in 0...5 {
+            fruitSaladNames.append(fruitCollection[index])
+        }
+        print(fruitSaladNames)
+        
+        //Assign the stored fruit salad names into the fruit salad image collections
+        fruitSaladImages = fruitSaladNames
+        
+        //Set the images
+        for fruitImage in fruitButtonCollection {
+            fruitImage.setImage(UIImage(named: fruitSaladImages[fruitImage.tag]), for: .normal)
+            //print("fruitImage number: \(fruitImage.tag) fruitImage name: \(fruitSaladImages[fruitImage.tag])")
+        }
+        
+        //Shuffle the fruit salad names
+        fruitSaladNames.shuffle()
+        
         //
-        
-        
+        fruitName.text = fruitSaladNames.removeLast()
     }
     
     

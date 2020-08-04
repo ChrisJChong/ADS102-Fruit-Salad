@@ -16,6 +16,7 @@ class ScoreViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        scoreLabel.text = ""
     }
     
 
@@ -24,8 +25,14 @@ class ScoreViewController: UIViewController {
         if let action = sender.titleLabel?.text {
             print(action)
             if action == "YES" {
+                
+                //Access the GameViewController to be able to change the parameter
+                //let vc = GameViewController(nibName: "GameViewController", bundle: nil)
+                //vc.newGameFlag = true
+                
                 //Dismiss the current view and load the previous view
                 navigationController?.popViewController(animated: true)
+
             } else {
                 self.navigationController?.popToRootViewController(animated: true)
             }

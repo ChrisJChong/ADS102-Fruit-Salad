@@ -16,7 +16,11 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
+        
+        gameInstructions.text = """
+        - - - - Game Instructions - - - -
+        Tap the fruit to match it with its name
+        """
     }
     
     @IBAction func startGamePressed(_ sender: UIButton) {
