@@ -12,11 +12,13 @@ class ScoreViewController: UIViewController {
 
     @IBOutlet weak var scoreLabel: UILabel!
     
+    var score = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        scoreLabel.text = ""
+        scoreLabel.text = "\(score)"
     }
     
 

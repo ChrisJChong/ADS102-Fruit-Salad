@@ -20,6 +20,8 @@ class GameViewController: UIViewController {
     
     var newGameFlag = false
     
+    var points = 0
+    
     //Words are shuffled
     //User is presented with all of the words and none of them are repeated
     //When the user selects the correct image, points are awarded
@@ -56,12 +58,14 @@ class GameViewController: UIViewController {
         if(fruitSaladImages[sender.tag] == fruitName.text) {
             
             print("Fruit Match")
+            
             //Award points
+            points += 1
             
-            //Disable the button that was just pressed
-            //sender.isEnabled = false
+            print("Score: \(points)")
             
-            //
+            //Update the score label
+            scoreLabel.text = "\(points)"
             
             //Check if the frutiSaladImage collection is empty
             if(fruitSaladNames.isEmpty) {
@@ -74,20 +78,31 @@ class GameViewController: UIViewController {
                 fruitName.text = fruitSaladNames.removeLast()
                 print("Items remaining - \(fruitSaladNames.count)")
             }
-            
-            
-            
+
         } else {
             
             //Don't award any points
             print("No match")
             
         }
-         
     }
     
+    //Prepare data to send across to the ScoreViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+        if let scoreView = segue.destination as? ScoreViewController {
+            //Sets the ScoreViewController variable score to the points currently accumulated
+            scoreView.score = points
+        }
+        
+    }
+
     //Creates a new game, every new round will contain a new shuffled collection
     func newGame() {
+        
+        //Reset points
+        points = 0
         
         //Make sure there are no previous items in the collections
         fruitSaladNames.removeAll()
@@ -114,11 +129,8 @@ class GameViewController: UIViewController {
         //Shuffle the fruit salad names
         fruitSaladNames.shuffle()
         
-        //
+        //Removes the last element of the collection and assigns it to the fruitName label
         fruitName.text = fruitSaladNames.removeLast()
     }
-    
-    
-    
-    
+
 }
