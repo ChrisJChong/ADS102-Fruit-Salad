@@ -9,10 +9,10 @@
 import Foundation
 
 struct Game {
-    
+     
     var fruitCollection: [String] = ["Apple","Grape","Kiwi","Lemonade","Orange","Pineapple","Strawberry","Watermelon"]
-    var fruitSaladNames: [String] = []
-    var fruitSaladImages: [String] = []
+    var fruitNames: [String] = []
+    var fruitImageNames: [String] = []
     var points = 0
     
     mutating func awardPoints() {
@@ -20,12 +20,12 @@ struct Game {
     }
     
     mutating func getFruitWord() -> String {
-        return fruitSaladNames.removeLast()
+        return fruitNames.removeLast()
     }
     
     mutating func clearFruitCollection() {
-        fruitSaladNames.removeAll()
-        fruitSaladImages.removeAll()
+        fruitNames.removeAll()
+        fruitImageNames.removeAll()
     }
     
     mutating func handleFruitCollections() {
@@ -35,17 +35,17 @@ struct Game {
         
         //Adds up to 6 different types of fruit into a new collection
         for index in 0...5 {
-            fruitSaladNames.append(fruitCollection[index])
+            fruitNames.append(fruitCollection[index])
         }
 
         //Assign the stored fruit salad names into the fruit salad image collections
-        fruitSaladImages = fruitSaladNames
+        fruitImageNames = fruitNames
         
         //Shuffle the fruit salad names
-        fruitSaladNames.shuffle()
+        fruitNames.shuffle()
     }
     
     func fruitSaladNamesIsEmpty() -> Bool {
-        return fruitSaladNames.isEmpty
+        return fruitNames.isEmpty
     }
 }

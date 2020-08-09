@@ -11,14 +11,14 @@ import UIKit
 class GameViewController: UIViewController {
 
     @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet weak var fruitName: UILabel!
+    @IBOutlet weak var nameOfFruit: UILabel!
     @IBOutlet var fruitButtonCollection: [UIButton]!
    
     var game = Game()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
         print("viewDidLoad")
     }
     
@@ -29,13 +29,16 @@ class GameViewController: UIViewController {
         newGame()
     }
     
+    //Determines if the word presented matches the user selected image
     @IBAction func fruitButtonTapped(_ sender: UIButton) {
-        print("Fruit button tag: \(sender.tag) Selected fruit name:\(game.fruitSaladImages[sender.tag])")
+        print("Fruit button tag: \(sender.tag) Selected fruit name:\(game.fruitImageNames[sender.tag])")
         
-        if(game.fruitSaladImages[sender.tag] == fruitName.text) {
+        //Check to see if the selected fruit is the same as the name of the fruit
+        if(game.fruitImageNames[sender.tag] == nameOfFruit.text) {
             
             print("Fruit Match")
             
+            //Add points to score
             game.awardPoints()
             
             print("Score: \(game.points)")
@@ -50,14 +53,10 @@ class GameViewController: UIViewController {
                 self.performSegue(withIdentifier: "goToScore", sender: self)
                 
             } else {
-               
-                fruitName.text = game.getFruitWord()
+                
+                //Get the fruit name and remove the name from the array
+                nameOfFruit.text = game.getFruitWord()
             }
-
-        } else {
-            
-            //Don't award any points
-            print("No match")
         }
     }
     
@@ -84,11 +83,11 @@ class GameViewController: UIViewController {
         
         //Set up the fruit images from the fruitSaladImage array
         for fruitImage in fruitButtonCollection {
-            fruitImage.setImage(UIImage(named: game.fruitSaladImages[fruitImage.tag]), for: .normal)
+            fruitImage.setImage(UIImage(named: game.fruitImageNames[fruitImage.tag]), for: .normal)
         }
 
         //Get the fruit name and remove the name from the array
-        fruitName.text = game.getFruitWord()
+        nameOfFruit.text = game.getFruitWord()
     }
 
 }

@@ -53,6 +53,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		5FA0947924DFDF0D00503D72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F46BBDA24D2A150006EC14A /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5FA0947A24DFDF2000503D72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FFBA78824C80BF3007D530D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5FFBA77624C80BF3007D530D = {
 			isa = PBXGroup;
 			children = (
@@ -75,8 +91,8 @@
 				5FFBA78224C80BF3007D530D /* AppDelegate.swift */,
 				5FFBA78424C80BF3007D530D /* SceneDelegate.swift */,
 				5F46BBE024D2ACA6006EC14A /* Controller */,
-				5F46BBDA24D2A150006EC14A /* Game.swift */,
-				5FFBA78824C80BF3007D530D /* Main.storyboard */,
+				5FA0947924DFDF0D00503D72 /* Model */,
+				5FA0947A24DFDF2000503D72 /* View */,
 				5FFBA78B24C80BF6007D530D /* Assets.xcassets */,
 				5FFBA78D24C80BF6007D530D /* LaunchScreen.storyboard */,
 				5FFBA79024C80BF6007D530D /* Info.plist */,

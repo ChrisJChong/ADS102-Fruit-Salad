@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PFj-dD-YBT">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,17 +11,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ADS102_Fruit_Salad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-v1" translatesAutoresizingMaskIntoConstraints="NO" id="cLf-5p-pbG">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHU-kv-p43">
-                                <rect key="frame" x="20" y="244" width="374" height="438"/>
+                                <rect key="frame" x="20" y="200" width="560" height="220"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Instructions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ews-zo-QvV">
-                                        <rect key="frame" x="10" y="69" width="354" height="100"/>
+                                        <rect key="frame" x="10" y="69" width="540" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="IL9-qM-UOc"/>
                                         </constraints>
@@ -37,13 +36,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRUIT SALAD" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heo-g5-lEh">
-                                <rect key="frame" x="20" y="194" width="374" height="65.5"/>
+                                <rect key="frame" x="20" y="150" width="560" height="65.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqe-EB-vLj">
-                                <rect key="frame" x="20" y="513" width="374" height="40"/>
+                                <rect key="frame" x="20" y="469" width="560" height="40"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
                                 <state key="normal" title="START GAME">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -89,14 +88,14 @@
             <objects>
                 <viewController id="Oob-nk-pD6" customClass="GameViewController" customModule="ADS102_Fruit_Salad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BXb-M5-dq6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-v2" translatesAutoresizingMaskIntoConstraints="NO" id="pbx-ec-jgy">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQn-YW-BvM">
-                                <rect key="frame" x="20" y="74" width="374" height="25"/>
+                                <rect key="frame" x="20" y="30" width="560" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Aca-iJ-JMD"/>
                                 </constraints>
@@ -105,10 +104,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nid-q5-cUx">
-                                <rect key="frame" x="20" y="107.5" width="374" height="150"/>
+                                <rect key="frame" x="20" y="63.5" width="560" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of fruit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOt-pb-KkW">
-                                        <rect key="frame" x="74.5" y="53.5" width="225" height="43.5"/>
+                                        <rect key="frame" x="167.5" y="53.5" width="225" height="43.5"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -121,27 +120,27 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Rcr-mW-xZ7">
-                                <rect key="frame" x="20" y="257.5" width="374" height="604.5"/>
+                                <rect key="frame" x="20" y="213.5" width="560" height="386.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Mec-Pu-b5C">
-                                        <rect key="frame" x="0.0" y="0.0" width="172" height="604.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="265" height="386.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5n2-Ch-uUx">
-                                                <rect key="frame" x="0.0" y="0.0" width="172" height="181.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="265" height="109"/>
                                                 <state key="normal" title="Button" image="Apple"/>
                                                 <connections>
                                                     <action selector="fruitButtonTapped:" destination="Oob-nk-pD6" eventType="touchUpInside" id="sNT-vU-jsU"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxF-gH-W9y">
-                                                <rect key="frame" x="0.0" y="211.5" width="172" height="181.5"/>
+                                                <rect key="frame" x="0.0" y="139" width="265" height="108.5"/>
                                                 <state key="normal" title="Button" image="Lemonade"/>
                                                 <connections>
                                                     <action selector="fruitButtonTapped:" destination="Oob-nk-pD6" eventType="touchUpInside" id="UxT-84-5Gc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C1-Ks-iVB">
-                                                <rect key="frame" x="0.0" y="423" width="172" height="181.5"/>
+                                                <rect key="frame" x="0.0" y="277.5" width="265" height="109"/>
                                                 <state key="normal" title="Button" image="Watermelon"/>
                                                 <connections>
                                                     <action selector="fruitButtonTapped:" destination="Oob-nk-pD6" eventType="touchUpInside" id="GjC-wS-rpG"/>
@@ -150,24 +149,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5Oa-x5-aox">
-                                        <rect key="frame" x="202" y="0.0" width="172" height="604.5"/>
+                                        <rect key="frame" x="295" y="0.0" width="265" height="386.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdc-94-zlP">
-                                                <rect key="frame" x="0.0" y="0.0" width="172" height="181.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="265" height="109"/>
                                                 <state key="normal" title="Button" image="Grape"/>
                                                 <connections>
                                                     <action selector="fruitButtonTapped:" destination="Oob-nk-pD6" eventType="touchUpInside" id="QCb-eY-k9f"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmQ-cr-4yO">
-                                                <rect key="frame" x="0.0" y="211.5" width="172" height="181.5"/>
+                                                <rect key="frame" x="0.0" y="139" width="265" height="108.5"/>
                                                 <state key="normal" title="Button" image="Pineapple"/>
                                                 <connections>
                                                     <action selector="fruitButtonTapped:" destination="Oob-nk-pD6" eventType="touchUpInside" id="bgp-0d-E56"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PD-CC-VEc">
-                                                <rect key="frame" x="0.0" y="423" width="172" height="181.5"/>
+                                                <rect key="frame" x="0.0" y="277.5" width="265" height="109"/>
                                                 <state key="normal" title="Button" image="Strawberry"/>
                                                 <connections>
                                                     <action selector="fruitButtonTapped:" destination="Oob-nk-pD6" eventType="touchUpInside" id="4TL-ko-7Ma"/>
@@ -199,7 +198,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="PGy-vM-suB"/>
                     <connections>
-                        <outlet property="fruitName" destination="eOt-pb-KkW" id="1wk-ih-FK9"/>
+                        <outlet property="nameOfFruit" destination="eOt-pb-KkW" id="1wk-ih-FK9"/>
                         <outlet property="scoreLabel" destination="bQn-YW-BvM" id="Z30-hY-Kwk"/>
                         <outletCollection property="fruitButtonCollection" destination="sdc-94-zlP" collectionClass="NSMutableArray" id="SsE-U5-kmi"/>
                         <outletCollection property="fruitButtonCollection" destination="vmQ-cr-4yO" collectionClass="NSMutableArray" id="Iw2-W8-iwR"/>
@@ -219,41 +218,41 @@
             <objects>
                 <viewController id="0gS-ow-arm" customClass="ScoreViewController" customModule="ADS102_Fruit_Salad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AD3-Rd-cDc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-v2" translatesAutoresizingMaskIntoConstraints="NO" id="v6F-VU-eDu">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Hic-cy-TU6">
-                                <rect key="frame" x="10" y="44" width="394" height="818"/>
+                                <rect key="frame" x="10" y="0.0" width="580" height="600"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcT-w6-cQr">
-                                        <rect key="frame" x="99.5" y="0.0" width="195.5" height="167"/>
+                                        <rect key="frame" x="192.5" y="0.0" width="195.5" height="112.5"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMl-wG-yBu">
-                                        <rect key="frame" x="131" y="217" width="132.5" height="167"/>
+                                        <rect key="frame" x="224" y="162.5" width="132.5" height="112.5"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAY AGAIN?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Htz-EH-wRM">
-                                        <rect key="frame" x="92" y="434" width="210.5" height="167"/>
+                                        <rect key="frame" x="185" y="325" width="210.5" height="112.5"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndj-qr-L33">
-                                        <rect key="frame" x="10" y="651" width="374" height="167"/>
+                                        <rect key="frame" x="10" y="487.5" width="560" height="112.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="XKD-al-bbe">
-                                                <rect key="frame" x="20" y="59.5" width="334" height="48"/>
+                                                <rect key="frame" x="20" y="32.5" width="520" height="48"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lQ-7o-mbC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="117" height="48"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="210" height="48"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="YES"/>
                                                         <connections>
@@ -261,7 +260,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEY-Oo-FEv">
-                                                        <rect key="frame" x="217" y="0.0" width="117" height="48"/>
+                                                        <rect key="frame" x="310" y="0.0" width="210" height="48"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="NO"/>
                                                         <connections>
@@ -313,10 +312,12 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="PFj-dD-YBT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d0a-bb-kVs">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PZs-85-Ehj">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>

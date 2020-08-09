@@ -16,11 +16,10 @@ class ScoreViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         scoreLabel.text = "\(score)"
     }
 
+    //Determine if the player wants to play again 
     @IBAction func playAgainButtonPressed(_ sender: UIButton) {
         
         if let action = sender.titleLabel?.text {
@@ -31,9 +30,10 @@ class ScoreViewController: UIViewController {
                 navigationController?.popViewController(animated: true)
 
             } else {
+                
+                //Go to the main view controller
                 self.navigationController?.popToRootViewController(animated: true)
             }
-
         }
     }
     
