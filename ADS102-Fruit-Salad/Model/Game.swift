@@ -33,7 +33,7 @@ struct Game {
         //Shuffle the fruit collection
         fruitCollection.shuffle()
         
-        //Adds up to 6 different types of fruit into a new collection
+        //Adds 6 different types of fruit into a new collection
         for index in 0...5 {
             fruitNames.append(fruitCollection[index])
         }

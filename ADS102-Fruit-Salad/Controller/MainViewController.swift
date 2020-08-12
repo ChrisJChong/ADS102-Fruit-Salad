@@ -12,14 +12,12 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var gameInstructions: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+
         gameInstructions.text = """
         - - - - Game Instructions - - - -
-        Tap the fruit to match it with its name
+        Tap on the fruit to match with the displayed name
         """
     }
     
